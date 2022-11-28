@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Titulo da Página -->
+  <title>Anita Malfatti - Linha do Tempo</title>
+  <!-- Fonte - Mundial -->
+  <link rel="stylesheet" href="https://use.typekit.net/hyu1luk.css">
+  <!-- Fonte - Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/hyu1luk.css">
+  <!-- Icons - Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="LinhadoTempo.css">
+  <!--ICON -->
+  <link rel="icon" href="Imagens/icon.png">
+  <!-- Java Script -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Imagens/logo.png" alt="Logo" class="mt-2 ">
+    </div>
+    <div class="menu">
+      <div class="menu_home" onclick="load_new_page(1)">HOME</div>
+      <div class="menu_biografia" onclick="load_new_page(2)">BIOGRAFIA</div>
+      <div class="menu_galeria" onclick="load_new_page(3)">GALERIA</div>
+      <div class="menu_timeline" onclick="load_new_page(4)">LINHA DO TEMPO</div>
+    </div>
+  </nav>
+  <!-- banner -->
+  <img class="banner" src="Imagens/timeline_banner.png" alt="banner">
+  <!-- Titulo -->
+  <div class="grid_title">
+    <p class="title">LINHA DO TEMPO</p>
+  </div>
+  <!-- começo da linha do tempo. -->
+  <div class="linha_01">
+    <!-- circulo 01-->
+    <div class="container-linha">
+      <div class="texto">
+        <p>Anita Malfatti nasceu em 2 de dezembro de 1889, em São Paulo.</p>
+      </div>
+      <div class="date">1889</div>
+    </div>
+    <!-- circulo 02-->
+    <div class="container-linha">
+      <div class="texto">
+        <p>Ingressou no Colégio Mackenzie.</p>
+      </div>
+      <div class="date">1897</div>
+    </div>
+    <!-- circulo 03-->
+    <div class="container-linha">
+      <div class="texto">
+        <p>Mudou-se para a Alemanha, onde permaneceu até 1914. Estudou no Museu Real de Artes e Ofícios, além de ter
+          contato com o expressionismo.</p>
+      </div>
+      <div class="date">1910</div>
+    </div>
+    <!-- circulo 04-->
+
+    <div class="container-linha">
+      <div class="texto">
+        <p class="direito">Primeira exposição indivclassual ocorreu em 1914, em São Paulo. Apresentou os estudos da
+          pintura
+          expressionista feitos em Berlim.
+        </p>
+      </div>
+      <div class="date">1914</div>
+    </div>
+  </div>
+  <!-- circulo 05-->
+  <div class="linha_02">
+    <div class="container-linha">
+      <div class="texto">
+        <p>Em 1915, foi para Nova Iorque, onde estudou na Arts Students League e na Independent Scool of Art.</p>
+      </div>
+      <div class="date">1915</div>
+    </div>
+    <!-- circulo 06-->
+    <div class="container-linha">
+      <div class="texto">
+        <p class="direito">Fez uma exposição de suas obras apresentando 53 trabalhos, ficando reconhecclassa devclasso a
+          uma
+          crítica negativa feita pelo escritor Monteiro Lobato.</p>
+      </div>
+
+      <div class="date">1917</div>
+    </div>
+    <!-- circulo 07-->
+    <div class="container-linha">
+      <div class="texto">
+        <p>Participou da Semana da Arte Moderna de 1922 ao lado de Tarsila do Amaral, Mário de Andrade, Oswald de
+          Andrade e Menotti De Picchia, o Grupo dos Cinco.</p>
+      </div>
+      <div class="date">1922</div>
+    </div>
+    <!-- circulo 08-->
+
+    <div class="container-linha">
+      <div class="texto">
+        <p class="direito">Mudou-se para Paris e realizou diversas exposicões individuais.</p>
+      </div>
+      <div class="date">1923</div>
+    </div>
+  </div>
+  <!-- circulo 09-->
+  <div class="linha_03">
+    <div class="container-linha">
+      <div class="texto">
+        <p>Retornou a São Paulo e passou a lecionar desenho na Universclassade Mackenzie.</p>
+      </div>
+      <div class="date">1928</div>
+    </div>
+    <!-- circulo 10-->
+    <div class="container-linha">
+      <div class="texto">
+        <p class="direito">Em 1942 foi nomeada presidente do Sindicato dos Artistas Plásticos de São Paulo.</p>
+      </div>
+      <div class="date">1942</div>
+    </div>
+  </div>
+  <!-- circulo 11-->
+  <div class="linha_04">
+    <div class="container-linha">
+      <div class="texto">
+        <p>Anita Malfatti integra a comissão organizadora do IV Salão Paulista de Arte Moderna.</p>
+      </div>
+      <div class="date">1955</div>
+    </div>
+    <!-- circulo 12-->
+    <div class="container-linha">
+      <div class="texto">
+        <p id="direito">Anita Malfatti faleceu em São Paulo, no dia 06 de novembro de 1964.</p>
+      </div>
+      <div class="date">1964</div>
+    </div>
+  </div>
+  <!-- começo do rodapé. -->
+  <footer>
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Conheça as redes sociais da artista:</span>
+      </div>
+      <div>
+        <a class="me-4 text-reset">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+        <a class="me-4 text-reset">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="me-4 text-reset">
+          <i class="fa fa-google"></i>
+        </a>
+        <a class="me-4 text-reset">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>ANITA MALFATTI
+            </h6>
+            <p>
+              Este é um site dedicado à importante e famosa artista plástica
+              brasileira: Anita Malfatti.
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links Úteis
+            </h6>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/index.html" class="text-reset"
+                style="color: #fdfcfc;">Home</a>
+            </p>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/Biografia.html" class="text-reset"
+                style="color: #fdfcfc;">Biografia</a>
+            </p>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/Galeria.html" class="text-reset"
+                style="color: #fdfcfc;">Galeria</a>
+            </p>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/LinhadoTempo.html" class="text-reset"
+                style="color: #fdfcfc;">Linha do Tempo</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p><i class="fa fa-home me-3"></i> São Paulo, SP, BRASIL</p>
+            <p>
+              <i class="fa fa-envelope me-3"></i>
+              contato@anitamalfatti.com.br
+            </p>
+            <p><i class="fa fa-phone me-3"></i> + 11 1234 5678</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright
+    </div>
+  </footer>
+</body>
+
+</html>

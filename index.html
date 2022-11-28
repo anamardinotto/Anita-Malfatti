@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Titulo da Página -->
+  <title>Anita Malfatti - Home</title>
+  <!-- Fonte - Mundial -->
+  <link rel="stylesheet" href="https://use.typekit.net/hyu1luk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lul1kla.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lul1kla.css">
+  <!-- Fonte - Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/hyu1luk.css">
+  <!-- Icons - Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!--ICON -->
+  <link rel="icon" href="Home/icon.png">
+  <!-- Java Script -->
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../javinha.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Imagens/logo.png" alt="Logo" class="mt-2 ">
+    </div>
+    <div class="menu">
+      <div class="menu_home" onclick="load_new_page(1)">HOME</div>
+      <div class="menu_biografia" onclick="load_new_page(2)">BIOGRAFIA</div>
+      <div class="menu_galeria" onclick="load_new_page(3)">GALERIA</div>
+      <div class="menu_timeline" onclick="load_new_page(4)">LINHA DO TEMPO</div>
+    </div>
+  </nav>
+  <!-- carousel-->
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="Imagens/home_1.png" alt="First slide">
+        <div class="carousel-caption text-center  d-none d-md-block custom-carousel">
+          <p class="carousel_title">ANITA MALFATTI</p>
+          <a class="carousel_subtitle">CONHEÇA A BIOGRAFIA DA ARTISTA</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="Imagens/home_2.png" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block custom-carousel">
+          <p class="carousel_title">ANITA MALFATTI</p>
+          <a class="carousel_subtitle">FIQUE POR DENTRO DO UNIVERSO DA ANITA</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="Imagens/home_3.png" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block custom-carousel">
+          <p class="carousel_title">ANITA MALFATTI</p>
+          <a class="carousel_subtitle">CONHEÇA AS OBRAS DA ARTISTA</a>
+        </div>
+      </div>
+      <span class="hoover"></span>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">proximo</span>
+    </a>
+  </div>
+
+  <div class="principal">
+    <!-- começo da biografia. -->
+    <div>
+      <div class="anita_grid_01">
+        <p class="anita_title">ANITA MALFATTI</p>
+        <p class="anita_subtitle">Conheça a biografia de uma das maiores pintoras do Brasil </p>
+      </div>
+      <div class="anita_grid_02">
+        <p id="background_01"></p>
+        <p id="background_02"></p>
+        <div class="photo_01">
+          <img src="Imagens/home_anita_1.png" alt="Anita Malfatti">
+        </div>
+        <div class="text_01">“Só faço o que sai aqui do coração, nada de inventar o que não está ao meu
+          alcance.”
+          <br>-Anita Malfatti
+        </div>
+        <div class="photo_02">
+          <img src="Imagens/home_anita_2.png" alt="Anita Malfatti">
+        </div>
+        <div class="text_02">
+          <p>
+            Anita Malfatti foi uma das mais importantes e famosas artistas plásticas (pintora e desenhista)
+            brasileiras.
+            Ela, também, trabalhou como professora e gravurista. Além disso, ela é uma das principais
+            artistas do Modernismo
+            brasileiro.
+          </p>
+        </div>
+        <a class="btn" id="btn_01" href="https://anita-malfatti.dedicado.repl.co/Biografia.html">VEJA MAIS</a>
+      </div>
+    </div>
+    <!-- começo da galeria. -->
+    <div class="galery_grid">
+      <p class="galery_title">GALERIA</p>
+      <p class="galery_subtitle">Conheça as principais Obras da artista
+        <br> Anita Malfatti
+      </p>
+    </div>
+  </div>
+  <div class="photos_galery">
+    <p id="background_03"></p>
+    <!-- animação da galeria -->
+    <img src="Imagens/home_galeria_1.png" class="photo_3" alt="Foto 01 da galeria" onmouseenter="exibe('text_photo_3')"
+      onmouseout="esconde('text_photo_3')">
+    <p id="text_photo_3"></p>
+    <img src="Imagens/home_galeria_2.png" class="photo_4" alt="Foto 02 da galeria" onmouseenter="exibe('text_photo_4')"
+      onmouseout="esconde('text_photo_4')">
+    <p id="text_photo_4"></p>
+    <img src="Imagens/home_galeria_3.png" class="photo_5" alt="Foto 03 da galeria" onmouseenter="exibe('text_photo_5')"
+      onmouseout="esconde('text_photo_5')">
+    <p id="text_photo_5"></p>
+    <a class="btn" id="btn_02" href="https://anita-malfatti.dedicado.repl.co/Galeria.html">VEJA MAIS</a>
+  </div>
+  <!-- começo da linha do tempo. -->
+  <div class="timeline">
+    <div class="grid_timeline_01">
+      <p class="timeline_title">LINHA DO TEMPO</p>
+      <p class="timeline_subtitle">Veja a linha do tempo da vida de
+        <br> Anita Malfatti
+      </p>
+    </div>
+    <div class="grid_timeline_02">
+      <p id="background_04"></p>
+      <p id="circulo_01" class="text_cir"> 1889</p>
+      <p id="circulo_02" class="text_cir"> 1897</p>
+      <p id="circulo_03" class="text_cir"> 1910</p>
+      <p id="circulo_04" class="text_cir"> 1914</p>
+      <p id="circulo_05" class="text_cir"> 1915</p>
+      <p id="text_timeline_01" class="text_timeline"> Anita Malfatti nasceu em 2 de dezembro de 1889, em São
+        Paulo.</p>
+      <p id="text_timeline_02" class="text_timeline">Ingressou no Colégio Mackenzie.</p>
+      <p id="text_timeline_03" class="text_timeline">Mudou-se para a Alemanha e começou a estudar no Museu Real de
+        Artes e
+        Ofícios, onde começou a ter contato com o expressionismo.</p>
+      <p id="text_timeline_04" class="text_timeline">Primeira exposição individual ocorreu em 1914, em São Paulo.
+        Apresentou os estudos da
+        pintura expressionista feitos em Berlim.</p>
+      <p id="text_timeline_05" class="text_timeline">Em 1915, foi para Nova Iorque, onde estudou na Arts Students
+        League e na Independent
+        Scool of Art.</p>
+      <a class="btn" id="btn_03" href="https://anita-malfatti.dedicado.repl.co/LinhadoTempo.html">VEJA MAIS</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Conheça as redes sociais da artista:</span>
+      </div>
+      <div>
+        <a class="me-4 text-reset">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+        <a class="me-4 text-reset">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="me-4 text-reset">
+          <i class="fa fa-google"></i>
+        </a>
+        <a class="me-4 text-reset">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>ANITA MALFATTI
+            </h6>
+            <p>
+              Este é um site dedicado à importante e famosa artista plástica
+              brasileira: Anita Malfatti.
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links Úteis
+            </h6>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/index.html" class="text-reset" style="color: #fdfcfc;">Home</a>
+            </p>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/Biografia.html" class="text-reset" style="color: #fdfcfc;">Biografia</a>
+            </p>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/Galeria.html" class="text-reset" style="color: #fdfcfc;">Galeria</a>
+            </p>
+            <p>
+              <a href="https://anita-malfatti.dedicado.repl.co/LinhadoTempo.html" class="text-reset" style="color: #fdfcfc;">Linha do Tempo</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p><i class="fa fa-home me-3"></i> São Paulo, SP, BRASIL</p>
+            <p>
+              <i class="fa fa-envelope me-3"></i>
+              contato@anitamalfatti.com.br
+            </p>
+            <p><i class="fa fa-phone me-3"></i> + 11 1234 5678</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright
+    </div>
+  </footer>
+</body>
+
+</html>

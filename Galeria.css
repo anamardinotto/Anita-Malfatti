@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFCFC;
+    background-size: cover;
+    color: #1A1A1A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  ANITA MALFATTI - NAVBAR  */
+.navbar {
+    align-items: center;
+    display: flex;
+    font-family: "mundial", sans-serif !important;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 5.75rem;
+    justify-content: space-between;
+    padding: 0 3.625rem;
+    width: 100%;
+    background-color: #FDFCFC;
+    position:fixed;
+   z-index: 1;
+}
+
+.navbar .logo {
+    align-items: center;
+    display: flex;
+}
+
+.navbar .menu {
+    align-items: center;
+    display: flex;
+    gap: 3.938rem;
+}
+
+.menu_home:hover,
+.menu_biografia:hover,
+.menu_galeria:hover,
+.menu_timeline:hover {
+    color: #D49634 !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.principal {
+    background: no-repeat url("Imagens/galery_background_01.svg") 0 600px, no-repeat url("Imagens/galery_background_02.svg") 0 2400px, no-repeat url("Imagens/galery_background_04.svg") 0 4000px, no-repeat url("Imagens/galery_background_05.svg") 0 4850px, no-repeat url("Imagens/galery_background_06.svg") 0 6850px;
+}
+
+/* BANNER */
+.banner {
+    display: block;
+    width: 100%;
+    margin: 0%;
+    padding: 0px;
+}
+
+
+/* TÍTULO  E SUBTÍTULO DA GALERIA*/
+.grid_title {
+    display: grid;
+    grid-template-columns: 0.45fr 1fr 0.45fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.title {
+    align-items: center;
+    font-family: "mundial", sans-serif !important;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    grid-area: 2 / 2 / 3 / 3;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    line-height: 4rem;
+    text-align: center !important;
+}
+
+.grid_subtitle_01 {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.subtitle_01 {
+    grid-area: 2 / 2 / 3 / 4;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 32px;
+    align-items: center;
+    text-align: justify;
+}
+
+.imagens img:hover{
+    border: solid;
+    border-width: 0.15rem;
+    padding: 0.625rem;
+    margin-bottom:5px;
+}
+
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 100px;
+    justify-items: center;
+    max-width: 1100px;
+    height: fit-content;
+    margin: 0 auto 20px;
+  }
+
+
+.pintura {
+    width: 300px;
+    height: fit-content;
+    position: relative;
+    margin-top: 3.781rem;
+    padding: 0.75rem;
+    border: 0.15rem solid transparent;
+  }
+
+
+/* SUBTÍTULO DA GALERIA*/
+.grid_subtitle_02 {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.subtitle_02 {
+    grid-area: 2 / 2 / 3 / 4;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 32px;
+    align-items: center;
+    text-align: justify;
+}
+
+/* TÍTULO  E SUBTÍTULO DAS IMAGENS*/
+.subtitulo{
+    width: 300px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    padding: 2px;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+/*  ANITA MALFATTI - FOOTER */
+footer{
+  background-color: #1A1A1A;
+   font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 32px;
+    color: #FDFCFC;
+}
+
+
+/*Responsividade*/
+@media (max-width: 920px) {
+  
+  /*Responsividade da Navbar*/
+  .navbar .menu {
+      gap: 20px;
+      font-family: mundial,sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      margin-left: 5px;
+  }
+  
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  
+  .navbar .logo {
+      padding-left: 5px;
+      padding-right: 5px;
+      justify-items: center;
+  }
+  
+/*Responsividade do tamanho das imagens da galeria*/
+    .imagens {
+     justify-items: center;
+     grid-gap: 20px;
+     padding-left: 10px;
+    }
+ 
+   .pintura img{
+     width: 250px;
+     height:auto;
+   }
+ 
+   .pintura .subtitulo {
+     width: 250px;
+   }  
+  .grid_title {
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+  }
+}

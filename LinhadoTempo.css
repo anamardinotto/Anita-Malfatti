@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+
+body { 
+ background-color: #FDFCFC;
+  color: #1A1A1A;
+ background-image: url("Imagens/background_timeline.svg");
+background-size: 100%;
+} 
+
+/*  ANITA MALFATTI - NAVBAR  */
+.navbar {
+    align-items: center;
+    display: flex;
+    font-family: "mundial", sans-serif !important;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 5.75rem;
+    justify-content: space-between;
+    padding: 0 3.625rem;
+    width: 100%;
+    background-color: #FDFCFC;
+    position:fixed;
+   z-index: 2;
+}
+
+.navbar .logo {
+  align-items: center;
+  display: flex;
+}
+
+.navbar .menu {
+  align-items: center;
+  display: flex;
+  gap: 3.938rem;
+}
+
+.menu_home:hover,
+.menu_biografia:hover,
+.menu_galeria:hover,
+.menu_timeline:hover {
+  color: #D49634 !important;
+  cursor: pointer; 
+  text-decoration: underline;
+}
+
+/*  BANNER  */
+.banner{
+  display: block;
+  width: 100%;
+  margin:0%;
+  padding: 0px;
+}
+
+/*  ANITA MALFATTI - BIOGRAFIA  */
+.grid_title {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr 0.45fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.title {
+  align-items: center;
+  font-family: "mundial", sans-serif !important;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  grid-area: 2 / 2 / 3 / 3;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  line-height: 4rem;
+  text-align: center !important;
+}
+
+:root {
+  --primary: #1A1A1A;
+}
+
+.linha_01{
+  background: no-repeat url("Imagens/timeline_background_01.svg");
+  background-size: cover;
+   z-index: 0;
+}
+
+.linha_02{
+  background: no-repeat url("Imagens/timeline_background_02.svg");
+  background-size: cover;
+   z-index: 0;
+}
+
+.linha_03{
+  background: no-repeat url("Imagens/timeline_background_03.svg");
+  background-size: cover;
+  z-index: 0;
+}
+
+.linha_04{
+  background: no-repeat url("Imagens/timeline_background_04.svg");
+  background-size: cover;
+  z-index: 0;
+}
+
+.linha_01,
+.linha_02,
+.linha_03,
+.linha_04 {
+  position:relative;
+  padding: 80px;
+  padding-bottom:1px;
+  padding-top: 1px;
+}
+.linha_01::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #1A1A1A;
+  opacity: 100;
+  top: 100px;
+  bottom: 0;
+  left: 50%;
+}
+.linha_02::after,
+.linha_03::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #1A1A1A;
+  opacity: 100;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.linha_04::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  background-color: #1A1A1A;
+  opacity: 100;
+  top: 0;
+  bottom: 50px;
+  left: 50%;
+}
+
+.container-linha {
+  position: relative;
+  background-color: inherit;
+  width: calc(50% + 61.5px);
+  margin-bottom: 120px;
+  margin-top: 50px;
+  justify-content: right;
+  
+}
+
+.container-linha .texto {
+  margin: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 25px;
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.linha_01 .container-linha:nth-child(even),
+.linha_02 .container-linha:nth-child(even),
+.linha_03 .container-linha:nth-child(even),
+.linha_04 .container-linha:nth-child(even) {
+  left: calc(50% - 58.5px);
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.linha_01 .container-linha .texto:nth-child(even),
+.linha_02 .container-linha .texto:nth-child(even),
+.linha_03 .container-linha .texto:nth-child(even),
+.linha_04 .container-linha .texto:nth-child(even) {
+  text-align: left;
+
+}
+
+.direito{
+  text-align: left;
+}
+
+.container-linha {
+  display: flex;
+}
+
+.linha_01 .container-linha .date,
+.linha_02 .container-linha .date, 
+.linha_03 .container-linha .date,
+.linha_04 .container-linha .date {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  justify-content:center;
+  z-index: 777;
+  align-self: center;
+  justify-self: center;
+}
+
+/*  ANITA MALFATTI - FOOTER */
+footer{
+  background-color: #1A1A1A;
+  font-family: 'Mundial';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 32px;
+  color: #FDFCFC;
+}
+
+/*Responsividade*/
+@media (max-width: 920px) {
+
+/*Responsividade da Navbar*/
+.navbar .menu {
+    gap: 20px;
+    font-family: mundial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+}
+
+.navbar .logo {
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-items: center;
+}
+}
+/*Responsividade da linha do tempo*/
+@media (max-width: 767px){
+.linha_01,
+.linha_02,
+.linha_03,
+.linha_04 {
+  padding: 20px;
+  background: #FDFCFC;
+}
+
+  .linha_01::after,
+  .linha_02::after,
+  .linha_03::after,
+  .linha_04::after {
+    left: 80px;
+  }
+  .container-linha {
+    left: 0;
+    flex-direction: row-reverse;
+    width: auto;
+    margin-bottom: 16px;
+  }
+  .container-linha .texto{
+    text-align: left;
+  }
+  .linha_01 .container-linha:nth-child(even),
+  .linha_02 .container-linha:nth-child(even),
+  .linha_03 .container-linha:nth-child(even),
+  .linha_04 .container-linha:nth-child(even) {
+    left: 0;
+  }
+    .grid_title {
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+  }
+}

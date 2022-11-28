@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Titulo da Página -->
+  <title>Anita Malfatti - Galeria</title>
+  <!-- Fonte - Mundial -->
+  <link rel="stylesheet" href="https://use.typekit.net/hyu1luk.css">
+  <!-- Fonte - Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.typekit.net/hyu1luk.css">
+  <!-- Icons - Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link href="Galeria_ABoba.css" rel="stylesheet">
+  <!--ICON -->
+  <link rel="icon" href="Imagens/icon.png">
+  <!-- Java Script -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Imagens/logo.png" alt="Logo" class="mt-2 ">
+    </div>
+    <div class="menu">
+      <div class="menu_home" onclick="load_new_page(1)">HOME</div>
+      <div class="menu_biografia" onclick="load_new_page(2)">BIOGRAFIA</div>
+      <div class="menu_galeria" onclick="load_new_page(3)">GALERIA</div>
+      <div class="menu_timeline" onclick="load_new_page(4)">LINHA DO TEMPO</div>
+    </div>
+  </nav>
+  <div class="principal">
+    <!-- titulo -->
+    <div class="grid_title">
+      <p class="title" id="galeria">A BOBA</p>
+    </div>
+    <!-- titulo -->
+    <div class="grid_conteudo">
+      <img class="quadro_boba" src="Imagens/img8.png" alt="A Boba">
+      <p class="texto" id="texto_04">Reprodução fotográfica Leonardo Crescenti</p>
+      <p class="titulo" id="titulo_01">Especificações Técnicas:</p>
+      <ul class="texto" id="texto_01">
+        <li> A Boba, 1915 - Anita Malfatti;</li>
+        <li>Óleo sobre tela;</li>
+        <li>61,00 cm x 50,60 cm;</li>
+        <li>Coleção Museu de Arte Contemporânea da Universidade de São Paulo (SP).</li>
+      </ul>
+      <p class="titulo" id="titulo_02"> Tipo:</p>
+      <ul class="texto" id="texto_02">
+        <li>Pintura.</li>
+      </ul>
+      <div class="linha" id="linha_01">
+      </div>
+      <!-- imagem da escala -->
+      <img class="foto_mulher" src="Imagens/foto_mulher.svg" alt="Foto mulher">
+      <p class="texto" id="texto_03"> Escala humana, como uma pessoa de 170 cm vê a obra.</p>
+      <div class="linha" id="linha_02">
+      </div>
+    </div>
+    <!-- começo do rodapé. -->
+    <footer>
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Conheça as redes sociais da artista:</span>
+        </div>
+        <div>
+          <a class="me-4 text-reset">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a class="me-4 text-reset">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="me-4 text-reset">
+            <i class="fa fa-google"></i>
+          </a>
+          <a class="me-4 text-reset">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>ANITA MALFATTI
+              </h6>
+              <p>
+                Este é um site dedicado à importante e famosa artista plástica
+                brasileira: Anita Malfatti.
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Links Úteis
+              </h6>
+              <p>
+                <a href="https://anita-malfatti.dedicado.repl.co/index.html" class="text-reset"
+                  style="color: #fdfcfc;">Home</a>
+              </p>
+              <p>
+                <a href="https://anita-malfatti.dedicado.repl.co/Biografia.html" class="text-reset"
+                  style="color: #fdfcfc;">Biografia</a>
+              </p>
+              <p>
+                <a href="https://anita-malfatti.dedicado.repl.co/Galeria.html" class="text-reset"
+                  style="color: #fdfcfc;">Galeria</a>
+              </p>
+              <p>
+                <a href="https://anita-malfatti.dedicado.repl.co/LinhadoTempo.html" class="text-reset"
+                  style="color: #fdfcfc;">Linha do Tempo</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+              <p><i class="fa fa-home me-3"></i> São Paulo, SP, BRASIL</p>
+              <p>
+                <i class="fa fa-envelope me-3"></i>
+                contato@anitamalfatti.com.br
+              </p>
+              <p><i class="fa fa-phone me-3"></i> + 11 1234 5678</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

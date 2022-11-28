@@ -1,0 +1,279 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-device-width: 900px) {
+  /* .menu { width:100%; } */
+}
+
+body {
+  background-color: #FDFCFC;
+  color: #1A1A1A;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+}
+
+/*  ANITA MALFATTI - NAVBAR  */
+.navbar {
+  align-items: center;
+  display: flex;
+  font-family: "mundial", sans-serif !important;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  height: 5.75rem;
+  justify-content: space-between;
+  padding: 0 3.625rem;
+  width: 100%;
+  position: fixed;
+   background-color: #FDFCFC;
+}
+
+.navbar .logo {
+  align-items: center;
+  display: flex;
+}
+
+.navbar .menu {
+  align-items: center;
+  display: flex;
+  gap: 3.938rem;
+}
+
+.menu_home:hover,
+.menu_biografia:hover,
+.menu_galeria:hover,
+.menu_timeline:hover {
+  color: #D49634 !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* BANNER */
+.foto {
+  position: absolute;
+  width: 1906px;
+  height: 785px;
+  left: 1px;
+  top: 92px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  margin: 0%;
+  padding: 0px;
+}
+
+/*  ANITA MALFATTI - TOPO  */
+
+.grid_biografia_01 {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr 0.45fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.biografia_title {
+  align-items: center;
+  font-family: "mundial", sans-serif !important;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  grid-area: 2 / 2 / 3 / 3;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  line-height: 4rem;
+  text-align: center !important;
+}
+
+.container_texto {
+  display: grid;
+  grid-template-columns: 0.2fr repeat(2, 1fr) 0.3fr 1fr 0.1fr;
+  grid-template-rows: 0fr 1fr 0.1fr 0.7fr 0.1fr repeat(2, 0.4fr) 0.1fr 1fr 0.1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .texto { grid-area: 2 / 2 / 3 / 4; }
+  .imagem1 { grid-area: 2 / 5 / 3 / 6; }
+  .imagem2 { grid-area: 4 / 2 / 5 / 3; }
+  .formacao_text { grid-area: 4 / 3 / 5 / 6; }
+  .continuacao { grid-area: 6 / 2 / 7 / 6; }
+  .arte_text { grid-area: 7 / 2 / 8 / 6; }
+  .reconhecimento_text { grid-area: 9 / 2 / 10 / 4; }
+  .imagem4 { grid-area: 9 / 5 / 10 / 6; }
+
+.imagem1 {
+  justify-items: right;
+  text-align: right;
+}
+
+.imagem1 img{
+  height: 500px;
+  width: auto;
+  border: solid;
+  border-width: 0.15rem;
+  padding: 15px
+}
+
+.texto{
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 300px;
+  line-height: 32px;
+}
+
+.infancia_text .infacia_titulo{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+.formacao_text .formacao-title{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+.formacao_text{
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 300px;
+  line-height: 32px;
+}
+.imagem2{
+  margin-right:10px;
+}
+.imagem2 img{
+  height: 450px;
+  width: auto;
+  border: solid;
+  border-width: 0.15rem;
+  padding: 12px;
+}
+
+.boba {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.arte_text .arte-title{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.continuacao{
+  justify-self: center;
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 300px;
+  line-height: 32px;
+}
+
+.arte_text{
+  justify-self: center;
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 300px;
+  line-height: 32px;
+}
+
+.reconhecimento_text .reconhecimento_title{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  
+  .reconhecimento_text{
+    justify-self: center;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 300px;
+    line-height: 32px;  
+  }
+  
+  .imagem4 {
+    justify-items: right;
+    text-align: right;  
+    margin-top: 25px;
+  }
+
+  .homembio {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-right: 105px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+  .imagem4 img{
+    height: 450px;
+    width: auto;
+    border: solid;
+    border-width: 0.15rem;
+    padding: 12px;
+  }
+
+/*  ANITA MALFATTI - FOOTER */
+footer{
+  background-color: #1A1A1A;
+   font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 32px;
+    color: #FDFCFC;
+}
+
+/*Responsividade*/
+@media (max-width: 920px) {
+  
+  /*Responsividade da Navbar*/
+  .navbar .menu {
+      gap: 20px;
+      font-family: mundial,sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      margin-left: 5px;
+  }
+  
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  
+  .navbar .logo {
+      padding-left: 5px;
+      padding-right: 5px;
+      justify-items: center;
+  }
+
+  .container_texto img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

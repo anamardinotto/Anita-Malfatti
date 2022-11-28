@@ -1,0 +1,558 @@
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #FDFCFC;
+    color: #1A1A1A;
+}
+
+/*  ANITA MALFATTI - NAVBAR  */
+.navbar {
+    align-items: center;
+    display: flex;
+    font-family: "mundial", sans-serif !important;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 5.75rem;
+    justify-content: space-between;
+    padding: 0 3.625rem;
+    width: 100%;
+    background-color: #FDFCFC;
+    position:fixed;
+    z-index: 2;
+}
+
+.navbar .logo {
+    align-items: center;
+    display: flex;
+}
+
+.navbar .logo img{
+  display: block;
+  width:100%;
+  height:auto;
+}
+
+.navbar .menu {
+    align-items: center;
+    display: flex;
+    gap: 3.938rem;
+}
+
+.menu_home:hover,
+.menu_biografia:hover,
+.menu_galeria:hover,
+.menu_timeline:hover {
+    color: #D49634 !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*  ANITA MALFATTI - CAROUSEL */
+.carousel-item {
+    height: max-content;
+    max-height: calc(100vh - 5.75rem);
+}
+
+.custom-carousel {
+    display: flex;
+    float: left;
+    justify-content: center;
+    left: 0px;
+    padding: 0.625rem 0;
+    text-align: center !important;
+    text-align: left;
+    width: 50%;
+}
+
+.carousel_title {
+    font-family: "mundial", sans-serif !important;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-bottom: 1.563rem;
+    line-height: 4rem;
+}
+
+.carousel_subtitle {
+    font-family: "mundial", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 1.875rem;
+}
+
+/*  ANITA MALFATTI - BIOGRAFIA  */
+.anita_grid_01 {
+    display: grid;
+    grid-template-columns: 0.45fr 1fr 0.45fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.4fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.anita_title {
+    font-family: "mundial", sans-serif !important;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+}
+
+.anita_subtitle {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: center;
+}
+
+.anita_grid_02 {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr) 5fr repeat(3, 0.6fr) 2.5fr 2.5fr repeat(2, 0.8fr);
+    grid-template-rows: 0.1fr 1.4fr 0.3fr 0.2fr;
+    grid-column-gap: 0.938rem;
+    grid-row-gap: 0.5rem;
+}
+
+#background_01{
+    background: url("Imagens/home_background_biografia.svg") no-repeat right bottom;
+    background-size: 100%;
+    grid-area: 1 / 1 / 8 / 11;
+}
+
+#background_02{
+    background: url("Imagens/home_background_biografia_02.svg") no-repeat center top;
+    background-size: 100%;
+    grid-area: 1 / 1 / 5 / 11;
+}
+
+.photo_01 {
+    grid-area: 1 / 3 / 3 / 4;
+    padding: 0.625rem;
+    border: solid;
+}
+
+.photo_02 {
+    grid-area: 2 / 7 / 4 / 9;
+    padding: 0.625rem;
+    border: solid;
+}
+
+.photos_galery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.anita_grid_02 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text_01 {
+    font-family: 'Poppins';
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    grid-area: 3 / 3 / 4 / 4;
+    letter-spacing: 0.02em;
+    line-height: 1.375rem;
+    text-align: right;
+    align-self: center;
+}
+
+.text_02 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    grid-area: 1 / 7 / 2 / 9;
+    letter-spacing: 0.02em;
+    line-height: 2rem;
+    text-align: start;
+    text-align: justify;
+}
+
+.btn{
+    align-self:center;
+    background-color: #1A1A1A !important;
+    border: 0;
+    color: #FDFCFC;
+    display: inline-block;
+    font-family: "mundial", sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.btn:hover {
+    background-color: #D49634 !important;
+}
+
+button {
+    align-items: end;
+}
+
+a:hover {
+    color: #FDFCFC;
+}
+
+#btn_01 {
+    grid-area: 4 / 7 / 5 / 9;
+    align-self
+}
+
+/*  ANITA MALFATTI - GALERIA  */
+.galery_grid {
+    display: grid;
+    grid-template-columns: 0.45fr 1fr 0.45fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.4fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.galery_title {
+    font-family: "mundial", sans-serif !important;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    grid-area: 2 / 2 / 3 / 3;
+    letter-spacing: 0.02em;
+    line-height: 32px;
+    text-align: center;
+}
+
+.galery_subtitle {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    grid-area: 3 / 2 / 4 / 3;
+    line-height: 30px;
+    text-align: center !important;
+}
+
+.photos_galery {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1.46fr) repeat(2, 1fr) repeat(2, 1.47fr) repeat(2, 1fr) repeat(2, 1.46fr) 1fr;
+    grid-template-rows: 0.9fr 0.35fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0.938rem
+}
+
+#background_03{
+    background: url("Imagens/home_background_galery.svg") no-repeat center center;
+    background-size: 120%;
+    grid-area: 1 / 1 / 2 / 13 !important;
+}
+
+.text_photos {
+    font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    background-color: #D49634;
+    padding: 1%;
+    width: 100%;
+    height: 50%;
+}
+
+.photo_3 {
+    grid-area: 1 / 2 / 2 / 4;
+    padding: 0.625rem;
+    border: solid;
+}
+
+#text_photo_3 {
+    grid-area: 1 / 2 / 2 / 4;
+    align-self: end;
+}
+
+.photo_4 {
+    grid-area: 1 / 10 / 2 / 12;
+    padding: 0.625rem;
+    border: solid;
+}
+
+#text_photo_4 {
+    grid-area: 1 / 10 / 2 / 12;
+    align-self: end;
+}
+
+.photo_5 {
+    grid-area: 1 / 6 / 2 / 8;
+    padding: 0.625rem;
+    border: solid;
+}
+
+#text_photo_5 {
+    grid-area: 1 / 6 / 2 / 8;
+    align-self: end;
+}
+
+#btn_02  {
+    grid-area: 2 / 6 / 3 / 8;
+}
+
+#btn_02 a{
+  background-color: #1A1A1A !important;
+  border: 0;
+  color: #FDFCFC;
+}
+
+/*  ANITA MALFATTI - LINHA DO TEMPO  */
+.grid_timeline_01 {
+    display: grid;
+    grid-template-columns: 0.45fr 1fr 0.45fr;
+    grid-template-rows: 0.3fr 1fr 0.5fr 0.2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.timeline_title {
+    align-items: center;
+    font-family: "mundial", sans-serif !important;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 4rem;
+    text-align: center !important;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.timeline_subtitle {
+    align-items: center;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center !important;
+    text-align: center;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.grid_timeline_02 {
+    display: grid;
+    grid-template-columns: 0.45fr repeat(5, 1fr) 0.8fr 0.45fr;
+    grid-template-rows: 0fr 1fr 0.6fr 1fr 0.45fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;  
+}
+
+.grid_timeline_02::after {
+    content: '';
+    display: block;
+    background: #1A1A1A;
+    margin-left: 15%;
+    width: 85%;
+    height: 4px;
+    transform: translateY(-50%);
+    grid-area: 3 / 1 / 4 / 8;
+    align-self: center;
+    z-index: 0;
+}
+
+#background_04{
+    background: url("Imagens/home_fundo_amarelo.svg") no-repeat center center;
+    background-size: 350%;
+    grid-area: 1 / 1 / 5 / 9 !important;
+}
+
+#circulo_01,
+#circulo_02,
+#circulo_03,
+#circulo_04,
+#circulo_05 {
+    align-items: center;
+    background: #1A1A1A;
+    border-radius: 50%;
+    border: 0;
+    color: #FDFCFC;
+    display: flex;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 38px;
+    height: 120px;
+    justify-content: center;
+    width: 120px;
+    margin-bottom: 0;
+    margin-right: 30%;
+    margin-left: auto;
+    position: relative;
+    z-index: 1; 
+}
+
+#circulo_01:hover,
+#circulo_02:hover,
+#circulo_03:hover,
+#circulo_04:hover,
+#circulo_05:hover {
+    background-color: #D49634 !important;
+}
+
+#circulo_01 {
+    grid-area: 3 / 2 / 4 / 3 !important;
+    align-self: center;
+}
+
+#circulo_02 {
+    grid-area: 3 / 3 / 4 / 4;
+    align-self: center;
+}
+
+#circulo_03 {
+    grid-area: 3 / 4 / 4 / 5;
+    align-self: center;
+}
+
+#circulo_04 {
+    grid-area: 3 / 5 / 4 / 6;
+    align-self: center;
+}
+
+#circulo_05 {
+    grid-area: 3 / 6 / 4 / 7;
+    align-self: center;
+}
+
+.text_timeline {
+    align-self: top;
+    color: #1A1A1A;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#text_timeline_01 {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: flex-end;
+}
+
+#text_timeline_02 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+#text_timeline_03 {
+    grid-area: 2 / 4 / 3 / 5;
+    align-self: flex-end;
+}
+
+#text_timeline_04 {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+#text_timeline_05 {
+    grid-area: 2 / 6 / 3 / 7;
+    align-self: flex-end;
+}
+
+#btn_03 {
+    grid-area: 3 / 7 / 4 / 8;
+    height:40%;
+    width: 100%;
+    align-self: center;
+     align-items: center;
+    background: #1A1A1A;
+    border: 0;
+    color: #FDFCFC;
+    display: flex;
+    font-family: 'Poppins', sans-serif !important;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-right: 30%;
+    margin-left: auto;
+    position: relative;
+    z-index: 1; 
+}
+
+footer{
+  background-color: #1A1A1A;
+   font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 32px;
+    color: #FDFCFC;
+}
+
+/*Responsividade*/
+@media (max-width: 920px) {
+
+  /*Responsividade das imagens da biografia*/
+    .anita_grid_02 {
+    grid-template-columns: repeat(2, 0.2fr) 6fr repeat(3, 0.2fr)     3fr 3fr repeat(2, 0.2fr);
+    grid-template-rows: 0.2fr 0.4fr 0.3fr 0.2fr;
+    }
+
+  /*Responsividade dos circulos da linha do tempo + grid e tamanho do texto*/
+    #circulo_01,
+    #circulo_02,
+    #circulo_03,
+    #circulo_04,
+    #circulo_05 {
+    font-size: 30px;
+    height: 100px;
+    width: 100px;
+    margin-right: 10%;
+    }
+
+    .grid_timeline_02 {
+       display: grid;
+       grid-template-columns: 0.25fr repeat(5, 1fr) 0.8fr 
+       0.25fr;
+       grid-template-rows: 0fr 1fr 0.5fr 1fr 0.45fr;
+       grid-column-gap: 0.5px;
+       grid-row-gap: 10px;
+    }
+
+    .text_timeline {
+    font-size: 17px;
+    }
+
+    #btn_03 {
+    font-size: 15px;
+    }
+  
+  /*Responsividade da Navbar*/
+  .navbar .menu {
+      gap: 20px;
+      font-family: mundial,sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      margin-left: 5px;
+  }
+  
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  
+  .navbar .logo {
+      padding-left: 5px;
+      padding-right: 5px;
+      justify-items: center;
+  }
+}
+  
