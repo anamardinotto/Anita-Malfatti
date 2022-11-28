@@ -84,30 +84,6 @@ background-size: 100%;
   --primary: #1A1A1A;
 }
 
-.linha_01{
-  background: no-repeat url("Imagens/timeline_background_01.svg");
-  background-size: cover;
-   z-index: 0;
-}
-
-.linha_02{
-  background: no-repeat url("Imagens/timeline_background_02.svg");
-  background-size: cover;
-   z-index: 0;
-}
-
-.linha_03{
-  background: no-repeat url("Imagens/timeline_background_03.svg");
-  background-size: cover;
-  z-index: 0;
-}
-
-.linha_04{
-  background: no-repeat url("Imagens/timeline_background_04.svg");
-  background-size: cover;
-  z-index: 0;
-}
-
 .linha_01,
 .linha_02,
 .linha_03,
