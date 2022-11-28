@@ -16,9 +16,6 @@ function load_new_page(page) {
     case 4:
       window.location.href = "LinhadoTempo.html"
       break;
-       case 5:
-      window.location.href = "Galeria_ABoba.html"
-      break;
     default:
       console.log("page goes 404");
   }
