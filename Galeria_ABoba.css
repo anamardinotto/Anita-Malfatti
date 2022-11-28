@@ -9,8 +9,9 @@ body {
     background-color: #FDFCFC;
     color: #1A1A1A;
     background-image: url("Imagens/background_galery_img.svg");
-    background-size: 100%;
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 /*  ANITA MALFATTI - NAVBAR  */
 .navbar {
@@ -169,6 +170,37 @@ grid-row-gap: 15px;
 
 #linha_02 { 
   grid-area: 7 / 1 / 7 / 7; 
+}
+
+/*Responsividade*/
+@media (max-width: 920px) {
+  
+  /*Responsividade da Navbar*/
+  .navbar .menu {
+      gap: 20px;
+      font-family: mundial,sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      margin-left: 5px;
+  }
+  
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  
+  .navbar .logo {
+      padding-left: 5px;
+      padding-right: 5px;
+      justify-items: center;
+  }
+
+  .quadro_boba{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
   
 /*  ANITA MALFATTI - FOOTER */

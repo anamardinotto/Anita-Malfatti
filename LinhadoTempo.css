@@ -8,9 +8,10 @@
 
 body { 
  background-color: #FDFCFC;
-  color: #1A1A1A;
+color: #1A1A1A;
  background-image: url("Imagens/background_timeline.svg");
-background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 } 
 
 /*  ANITA MALFATTI - NAVBAR  */
@@ -194,7 +195,7 @@ background-size: 100%;
   align-items: center;
   display: flex;
   justify-content:center;
-  z-index: 777;
+  z-index: 1;
   align-self: center;
   justify-self: center;
 }
